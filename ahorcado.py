@@ -1,4 +1,5 @@
 from random import choice
+from os import system
 
 palabras = ["mesa", "auto", "perro", "pelota", "bicicleta", "moto"]
 letras_correctas = []
@@ -23,9 +24,10 @@ def pedir_letra():
         letra_elegida = input("Elige una letra: ").lower()
         if letra_elegida in abecedario and len(letra_elegida) == 1:
             es_valida = True
+
         else:
             print("No haz elegido una letra correcta")
-
+    system("cls")
     return letra_elegida
 
 
